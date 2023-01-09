@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -12,15 +12,15 @@ const Navbar = () => {
         </div>
         <div className="navCenter">
            <ul className='navList'>
-            <li className='navListItem'>Home</li>
-            <li className='navListItem'>About</li>
-            <li className='navListItem'>Contacts</li>
-            <li className='navListItem'>Add Blog</li>
-            <li className='navListItem'>LOGOUT</li>
+            <li className='navListItem'><Link className="link" to = "/">Home</Link></li>
+            <li className='navListItem'><Link className="link" to = "/">About</Link></li>
+            <li className='navListItem'><Link className="link" to = "/">Contact</Link></li>
+            <li className='navListItem'><Link className="link" to = "/addblog">AddBlog</Link></li>
+            <li className='navListItem'><Link className="link" to = "/login">LOGOUT</Link></li>
             </ul> 
         </div>
         <div className="navRight">
-            <img className='navImage' src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <img  className='navImage' src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
             <i class="navSearchIcon fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
